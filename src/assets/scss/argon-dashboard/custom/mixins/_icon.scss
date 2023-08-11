@@ -1,0 +1,12 @@
+@mixin icon-shape-variant($color) {
+  color: saturate(darken($color, 10%), 10);
+  background-color: transparentize(lighten($color, 10%), .5);
+}
+
+@mixin icon-color-variant($parent, $color) {
+  #{$parent} {
+    color: $color;
+    height: 20px;
+    width: 20px;
+  }
+}

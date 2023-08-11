@@ -1,0 +1,31 @@
+//
+// Navbar
+//
+
+@import "navbars/navbar";
+@import "navbars/navbar-vertical";
+@import "navbars/navbar-search";
+@import "navbars/navbar-dropdown";
+@import "navbars/navbar-collapse";
+
+.navLink {
+  margin-left: 40px;
+  padding: 10px;
+}
+
+.admin-label {
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.navLinkBtn {
+  background-color: none;
+}
+
+.dropDown-navlink {
+  color: black;
+}
+

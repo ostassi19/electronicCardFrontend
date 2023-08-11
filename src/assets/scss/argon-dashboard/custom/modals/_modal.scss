@@ -1,0 +1,85 @@
+//
+// Modal
+//
+
+
+// Fluid modal
+
+.modal-fluid {
+  .modal-dialog {
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+
+// Background color variations
+
+@each $color, $value in $theme-colors {
+  .modal-#{$color} {
+    @include modal-variant($value);
+  }
+}
+
+.modal-title {
+  color: white;
+}
+
+.modal-footer {
+  padding-bottom: 0rem;
+}
+
+.modal-input-primary {
+  width: 16vh;
+  border: 1px solid #2a4d89;
+
+}
+
+.modal-input-secondary {
+  width: 40vh;
+  border: 1px solid #2a4d89;
+}
+
+.modal-input-thirdary {
+  width: 60vh;
+  border: 1px solid #2a4d89;
+}
+
+.modal-body {
+  padding: 0 0.75rem 0.75rem;
+}
+
+.modal-header .close {
+  padding: 0.5rem;
+  margin: -1rem -0.75rem -0.75rem auto;
+  color: crimson;
+}
+
+.modal-body span {
+  font-size: 17px;
+}
+
+.center-btns {
+  text-align: center;
+  padding-top: 20px;
+}
+.alert-success {
+  color: #fff;
+  background-color: transparent ;
+  border-color: transparent ;
+  span{
+    color: #32325d;
+
+  }
+}
+
+
